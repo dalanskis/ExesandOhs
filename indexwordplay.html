@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Infinite</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+</head>
+<style>
+    :root {
+        --del-color: #ff92bf;
+        --ins-color: #ddff92;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        font-size: 2em;
+        color: #252222;
+        display: flex;
+        align-items: center;
+        min-width: 15em;
+    }
+
+    p {
+        padding: 2em;
+        max-width: 20em;
+        margin: auto;
+    }
+
+    del {
+        --color: var(--del-color, red);
+        text-decoration: none;
+        padding: 0 .5em;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to left, rgba(255, 255, 255, .5), transparent), linear-gradient(2deg, var(--color) 50%, transparent 50%), linear-gradient(-.9deg,
+        var(--color) 50%, transparent 50%), linear-gradient(-60deg, var(--color) 50%, transparent 50%), linear-gradient(120deg, var(--color) 50%, transparent 50%);
+        background-size: 30% 1.5px, calc(100% - 20px) 10px, calc(100% - 20px) 10px, 10px 10px, 8px 8px;
+        background-position: 100% calc(50% + 2px), center center, center center, 2px 50%, calc(100% - 3px) calc(50% + 1px);
+    }
+
+    .dave-intro {
+        font-family: 'Inknut Antiqua', serif;
+        margin: 0 auto;
+        /* text-align: center; */
+    }
+
+    /* don't have much ideas
+for
+<ins> */
+
+    ins {
+        background: var(--ins-color, green);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+        <div class="dave-intro">
+            David Foster Wallace
+        </div>
+    <p>“The truth will
+        <del>set you free.</del>
+        <br> But not until it is
+        <ins>finished with you.”</ins>
+    </p>
+
+
+
+</body>
+
+</html>
